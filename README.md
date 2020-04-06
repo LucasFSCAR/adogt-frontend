@@ -1,7 +1,6 @@
 # adogt-backend
   
 
-#
 
      __/o \_
      \____  \
@@ -12,6 +11,3 @@ __/o \-\//--\   \_/
      ||   \ |\ |
     _||   _||_||
 	
-#
-	
-	### Execute `npm start` para rodar o servidor local.
