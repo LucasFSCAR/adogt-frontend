@@ -4,4 +4,7 @@
     <string name="adogt">Adogt</string>
     <string name="dog1">dog1</string>
     <string name="dog_anti_corona">Dog anti Corona</string>
+    <string name="not_possible_to_load">Não foi possível carregar :(</string>
+    <string name="refresh">Atualizar</string>
+    <string name="register">Registrar</string>
 </resources>
