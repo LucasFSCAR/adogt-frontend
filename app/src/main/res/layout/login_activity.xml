@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         app:srcCompat="@drawable/logo" />
 
     <TextView
@@ -28,6 +28,7 @@
         android:layout_marginBottom="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -42,6 +43,7 @@
         android:layout_marginBottom="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -52,7 +54,7 @@
 
     <Button
         android:id="@+id/login_button"
-        android:layout_width="120dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#e4c68d"
@@ -61,7 +63,7 @@
 
     <Button
         android:id="@+id/register_button"
-        android:layout_width="120dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:backgroundTint="#e4c68d"

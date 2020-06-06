@@ -6,20 +6,20 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c148083-6704-42d5-b594-3104672e85c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/doge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/pug.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/wpp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/login_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/manage_pets.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/pet_activity.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/pet_card_edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/register_pet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/register_user.xml" afterDir="false" />
+    <list default="true" id="09207b4c-f298-4fbf-98c3-0c735ede2ee2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/api/controllers/UserController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/api/services/UserService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/model/Token.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/model/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/model/UserAuthentication.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/singletons/UserInfo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/ui/activities/LoginActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/ui/activities/RegisterActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/image_rounded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
@@ -32,13 +32,78 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_annotation_annotation_1_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/emanu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/gradient_backgorund.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/gradient_backgorund.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/.idea/dictionaries/emanu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/androidTest/java/com/example/myapplication/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/java/com/example/myapplication/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/java/com/example/myapplication/SplashActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/drawable-v24/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/drawable/dog1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/drawable/dog2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/drawable/gradient_backgorund.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/font/Quicksand/Quicksand-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/font/Quicksand/Quicksand-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/font/Quicksand/Quicksand-Medium.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/font/Quicksand/Quicksand-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/font/Quicksand/Quicksand-SemiBold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/font/quicksand_bold.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/font/quicksand_medium.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/layout-v21/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/layout/activity_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/values/font_certs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/values/preloaded_fonts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/app/src/test/java/com/example/myapplication/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyApplication/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/ui/activities/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/PetListAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/ui/adapters/PetListAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/SplashActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/ui/activities/SplashActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/api/RetrofitConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/myapplication/api/RetrofitConfig.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/login_activity.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/manage_pets.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/manage_pets.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/pet_activity.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pet_activity.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/pet_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/pet_card.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/register_user.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/register_user.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +111,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_28_A-9" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -55,51 +120,42 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
+        <projects_view />
       </state>
     </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
-        <option value="resourceFile" />
-        <option value="layoutResourceFile" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1bBEWglSElZabZstbgNN66t8c3n" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1cvMrisYbIJdD08RCXPChCiLR3p" />
   <component name="PropertiesComponent">
-    <property name="DEBUGGABLE_DEVICE" value="asus-asus_x00qd-J8AXB602A6174XD" />
+    <property name="DEBUGGABLE_DEVICE" value="Pixel_2_API_28_A-9 [emulator-5554]" />
     <property name="DEBUGGABLE_PROCESS" value="com.example.myapplication" />
+    <property name="DEBUGGER_ID" value="Auto" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lumos" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.17" />
-    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
-    <key name="android.template.packageName">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.myapplication" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raulf\Desktop\adogt-frontend\app\src\main\res\drawable-v24" />
-      <recent name="C:\Users\emanu\AndroidStudioProjects\MyApplication\app\src\main\res\drawable" />
-      <recent name="C:\Users\emanu\AndroidStudioProjects\MyApplication\app\src\main\res\font" />
-      <recent name="C:\Users\emanu\AndroidStudioProjects\MyApplication\app\src\main\res\drawable-v24" />
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.example.myapplication.ui.adapters" />
+      <recent name="com.example.myapplication.ui.activities" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.example.myapplication.model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -114,61 +170,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android App.adogt-frontend-app">
+  <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="adogt-frontend-app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="adogt-frontend-app" />
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -230,11 +235,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0c148083-6704-42d5-b594-3104672e85c1" name="Default Changelist" comment="" />
-      <created>1588097120198</created>
+      <changelist id="09207b4c-f298-4fbf-98c3-0c735ede2ee2" name="Default Changelist" comment="" />
+      <created>1591404814465</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1588097120198</updated>
+      <updated>1591404814465</updated>
     </task>
     <servers />
   </component>
@@ -250,43 +255,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myapplication/PetListAdapter.kt</url>
-          <line>21</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myapplication/PetListAdapter.kt</url>
-          <line>16</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myapplication/MainActivity.kt</url>
-          <line>53</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myapplication/MainActivity.kt</url>
-          <line>40</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/myapplication/MainActivity.kt</url>
-          <line>42</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="adogt-frontend-app">
-        <watch expression="petList[position].name" />
-        <watch expression="petList.size" />
-        <watch expression="t" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
