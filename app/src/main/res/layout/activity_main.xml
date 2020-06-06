@@ -5,12 +5,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/login_background"
         android:orientation="vertical"
-        tools:context=".ui.activities.MainActivity"
-        android:background="@drawable/login_background">
+        tools:context=".ui.activities.MainActivity">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/not_loaded"
@@ -44,7 +45,7 @@
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton3"
+        android:id="@+id/create_pet_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"

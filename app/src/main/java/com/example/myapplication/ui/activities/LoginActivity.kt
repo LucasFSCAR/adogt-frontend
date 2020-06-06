@@ -39,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
         }
 
         loginButton.setOnClickListener{
-            if (!debugMode) {
+            if (debugMode) {
                 val i = Intent(this@LoginActivity, MainActivity::class.java)
                 startActivity(i)
                 finish()

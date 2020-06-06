@@ -1,5 +1,6 @@
 package com.example.myapplication.ui.adapters
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,6 +8,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.R
 import com.example.myapplication.model.Pet
+import com.example.myapplication.ui.activities.PetInfoActivity
+import com.example.myapplication.ui.activities.RegisterPetActivity
+import com.google.android.material.card.MaterialCardView
 
 
 class PetListAdapter(private var petList: List<Pet>) :
@@ -31,6 +35,17 @@ class PetListAdapter(private var petList: List<Pet>) :
 
         val petDescription = holder.view.findViewById<TextView>(R.id.pet_description)
         petDescription.text = petList[position].description
+
+        val petCard = holder.view.findViewById<MaterialCardView>(R.id.pet_card)
+        petCard.setOnClickListener{
+            val i = Intent(holder.view.context, PetInfoActivity::class.java)
+            i.putExtra("name", petName.text.toString())
+            i.putExtra("age", petAge.text.toString())
+            i.putExtra("breed", petBreed.text.toString())
+            i.putExtra("description", petDescription.text.toString())
+
+            holder.view.context.startActivity(i)
+        }
     }
 
     fun updateData(newList: List<Pet>) {
