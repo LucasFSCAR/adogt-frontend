@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitConfig {
     private val retrofit: Retrofit
-    private val baseUrl = "http://7ec9ee141b5d.ngrok.io"
+    private val baseUrl = "http://ff91f9cdd074.ngrok.io"
 
     constructor() {
         retrofit = Retrofit.Builder()

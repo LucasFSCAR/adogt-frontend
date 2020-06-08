@@ -18,7 +18,7 @@ import retrofit2.Response
 
 class LoginActivity : AppCompatActivity() {
     companion object {
-        val debugMode = true
+        val debugMode = false
     }
 
     lateinit var emailInput: EditText

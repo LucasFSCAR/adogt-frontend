@@ -42,6 +42,7 @@
             android:layout_height="wrap_content"
             android:scrollbars="vertical" />
 
+
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -49,8 +50,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
+        android:backgroundTint="#e4c68d"
         app:srcCompat="@android:drawable/ic_input_add"
         android:layout_gravity="bottom|end"
         android:layout_margin="20dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/show_own_pets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="20dp"
+        android:backgroundTint="#e4c68d"
+        android:clickable="true"
+        app:srcCompat="@drawable/patinha" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -52,7 +52,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun createRequest() {
-        val user = User(nameInput.text.toString(), surnameInput.text.toString(), emailInput.text.toString(), phoneInput.text.toString(), passwordInput.text.toString())
+    val user = User(nameInput.text.toString(), surnameInput.text.toString(), emailInput.text.toString(), phoneInput.text.toString(), passwordInput.text.toString(), "")
         val call = UserController.createUser(user)
         call.enqueue(object : Callback<User> {
             override fun onResponse(call: Call<User>?, response: Response<User>?) {

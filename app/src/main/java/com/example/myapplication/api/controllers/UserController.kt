@@ -15,4 +15,9 @@ object UserController {
     fun loginUser(user:UserAuthentication): Call<Token> {
         return RetrofitConfig().userService().loginUser(user)
     }
+
+    @JvmStatic
+    fun getUserByEmail(email:String): Call<User> {
+        return RetrofitConfig().userService().getUserByEmail(email)
+    }
 }

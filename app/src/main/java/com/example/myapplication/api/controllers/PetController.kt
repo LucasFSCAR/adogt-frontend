@@ -9,4 +9,8 @@ object PetController {
     fun allPets(): Call<List<Pet>> {
         return RetrofitConfig().petService().allPets()
     }
+    @JvmStatic
+    fun getPetByUserId(id:String): Call<List<Pet>> {
+        return RetrofitConfig().petService().getPetByUserId(id)
+    }
 }

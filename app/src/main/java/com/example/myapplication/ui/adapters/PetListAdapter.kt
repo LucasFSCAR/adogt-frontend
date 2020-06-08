@@ -27,22 +27,20 @@ class PetListAdapter(private var petList: List<Pet>) :
         val petName = holder.view.findViewById<TextView>(R.id.pet_name)
         petName.text = petList[position].name
 
-        val petAge = holder.view.findViewById<TextView>(R.id.pet_age)
-        petAge.text = petList[position].age.toString()
+        val petAge = petList[position].age.toString()
 
         val petBreed = holder.view.findViewById<TextView>(R.id.pet_breed)
         petBreed.text = petList[position].breed
 
-        val petDescription = holder.view.findViewById<TextView>(R.id.pet_description)
-        petDescription.text = petList[position].description
+        val petDescription = petList[position].description
 
         val petCard = holder.view.findViewById<MaterialCardView>(R.id.pet_card)
         petCard.setOnClickListener{
             val i = Intent(holder.view.context, PetInfoActivity::class.java)
             i.putExtra("name", petName.text.toString())
-            i.putExtra("age", petAge.text.toString())
+            i.putExtra("age", petAge)
             i.putExtra("breed", petBreed.text.toString())
-            i.putExtra("description", petDescription.text.toString())
+            i.putExtra("description", petDescription)
 
             holder.view.context.startActivity(i)
         }
