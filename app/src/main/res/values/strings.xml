@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="todo">TODO</string>
+    <string name="adogt">Adogt</string>
+    <string name="dog1">dog1</string>
+    <string name="dog_anti_corona">Dog anti Corona</string>
+    <string name="not_possible_to_load">Não foi possível carregar :(</string>
+    <string name="refresh">Atualizar</string>
+    <string name="register">Registrar</string>
+    <string name="voc_n_o_cadastrou_pet_s">Você não cadastrou Pet\'s</string>
+    <string name="confirmar">Confirmar</string>
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F0f0f0">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pug"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:id="@+id/pet_name_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:text="Nome: "
+                    android:textSize="18sp"
+                    tools:text="Regina Emanuel Adilson" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_margin="5dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pet_breed_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:gravity="center_vertical"
+                        android:text="Raça: "
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:text="Raça" />
+
+                    <TextView
+                        android:id="@+id/pet_breed_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:gravity="end"
+                        android:textSize="18sp"
+                        tools:text="Pug" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_margin="5dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pet_age_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:text="Idade: "
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:text="Idade" />
+
+                    <TextView
+                        android:id="@+id/pet_age_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:gravity="end"
+                        android:textSize="18sp"
+                        tools:text="7 meses" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_margin="5dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="8dp"
+                    android:textStyle="bold"
+                    android:text="Descrição"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/pet_description_field"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="8dp"
+                    android:text="Descrição"
+                    android:textSize="18sp"
+                    tools:text="Cachorro muito amigável, gosta de passear e ficar correndo pela casa. Gosta de qualquer tipo de ração." />
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_margin="5dp"
+                    android:background="?android:attr/listDivider" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Dono"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/pet_owner_name_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+                android:textSize="20sp"
+                tools:text="Henrique Ribeiro" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/wpp" />
+
+            <TextView
+                android:id="@+id/pet_owner_phone_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                tools:text="(31) 9725-1338" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

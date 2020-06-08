@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F0f0f0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pug"
+                    android:layout_marginBottom="12dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pet_name_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:gravity="center_vertical"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:text="Nome:"/>
+
+                    <EditText
+                        android:id="@+id/pet_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:gravity="start"
+                        android:textSize="18sp"
+                        tools:text="" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_margin="5dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pet_breed_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:gravity="center_vertical"
+                        android:text="Raça: "
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:text="Raça" />
+
+                    <EditText
+                        android:id="@+id/pet_breed_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:gravity="start"
+                        android:textSize="18sp"
+                        tools:text="" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_margin="5dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/pet_age_field"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:text="Idade: "
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:text="Idade" />
+
+                    <EditText
+                        android:id="@+id/pet_age_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="8dp"
+                        android:gravity="start"
+                        android:textSize="18sp"
+                        android:inputType="number"
+                        tools:text="" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_margin="5dp"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="8dp"
+                    android:textStyle="bold"
+                    android:text="Descrição"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/pet_description_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="8dp"
+                    android:textSize="18sp"
+                    tools:text="" />
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="3dp"
+                    android:layout_margin="5dp"
+                    android:background="?android:attr/listDivider" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp">
+
+            <Button
+                android:id="@+id/edit_pet_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirmar"
+                android:backgroundTint="#e4c68d"
+                android:textColor="#000000"
+                android:layout_margin="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".ui.activities.MainActivity">
+
+    <TextView
+        android:id="@+id/petdne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:layout_gravity="center"
+        android:textSize="30sp"
+        android:text="@string/voc_n_o_cadastrou_pet_s" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/not_loaded2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/not_possible_to_load" />
+
+        <Button
+            android:id="@+id/refresh_button2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/refresh" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/pet_list2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
