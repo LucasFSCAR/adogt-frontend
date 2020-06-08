@@ -67,6 +67,11 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    override fun onResume() {
+        super.onResume()
+        loadList()
+    }
+
     private fun loadList() {
         val call = PetController.allPets()
         call.enqueue(object : Callback<List<Pet>> {
