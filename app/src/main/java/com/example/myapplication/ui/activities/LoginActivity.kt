@@ -17,9 +17,6 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class LoginActivity : AppCompatActivity() {
-    companion object {
-        val debugMode = false
-    }
 
     lateinit var emailInput: EditText
     lateinit var passwordInput: EditText
@@ -33,19 +30,8 @@ class LoginActivity : AppCompatActivity() {
 
         val loginButton = findViewById<Button>(R.id.login_button)
 
-        if (!debugMode) {
-            emailInput.setText("teste@teste")
-            passwordInput.setText("123")
-        }
-
-        loginButton.setOnClickListener{
-            if (debugMode) {
-                val i = Intent(this@LoginActivity, MainActivity::class.java)
-                startActivity(i)
-                finish()
-            } else {
-                login()
-            }
+        loginButton.setOnClickListener {
+            login()
         }
         val registerButton = findViewById<Button>(R.id.register_button)
         registerButton.setOnClickListener{

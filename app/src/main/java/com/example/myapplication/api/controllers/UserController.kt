@@ -20,4 +20,9 @@ object UserController {
     fun getUserByEmail(email:String): Call<User> {
         return RetrofitConfig().userService().getUserByEmail(email)
     }
+
+    @JvmStatic
+    fun getUserById(id:String): Call<User> {
+        return RetrofitConfig().userService().getUserById(id)
+    }
 }

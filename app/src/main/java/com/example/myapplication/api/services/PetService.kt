@@ -16,4 +16,7 @@ interface PetService {
 
     @PUT("/pet/{id}")
     fun updatePet(@Body pet:Pet, @Path(value="id") id:String): Call<Pet>
+
+    @DELETE("/pet/{id}")
+    fun deletePet(@Path(value="id") id:String): Call<Unit>
 }

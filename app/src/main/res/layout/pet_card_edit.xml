@@ -160,12 +160,28 @@
                     android:layout_height="3dp"
                     android:layout_margin="5dp"
                     android:background="?android:attr/listDivider" />
+
             </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="18dp">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/available"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="5dp"
+                android:checked="true"
+                android:text="Disponível"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/edit_pet_button"
@@ -174,6 +190,21 @@
                 android:text="@string/confirmar"
                 android:backgroundTint="#e4c68d"
                 android:textColor="#000000"
+                android:layout_margin="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="18dp">
+
+            <Button
+                android:id="@+id/delete_pet_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/deletar"
+                android:backgroundTint="#ee4035"
+                android:textColor="#FFFFFF"
                 android:layout_margin="16dp"/>
         </LinearLayout>
 

@@ -161,7 +161,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="Dono"
+                android:text="Dono: "
                 android:textStyle="bold"
                 android:textSize="20sp" />
 
@@ -173,7 +173,7 @@
                 android:layout_gravity="center_horizontal"
                 android:text=""
                 android:textSize="20sp"
-                tools:text="Henrique Ribeiro" />
+                tools:text="" />
         </LinearLayout>
 
         <LinearLayout
@@ -198,7 +198,8 @@
                 android:layout_marginHorizontal="8dp"
                 android:layout_weight="1"
                 android:textSize="20sp"
-                tools:text="(31) 9725-1338" />
+                android:inputType="phone"
+                tools:text="" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

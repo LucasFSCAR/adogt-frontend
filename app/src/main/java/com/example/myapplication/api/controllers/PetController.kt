@@ -21,5 +21,9 @@ object PetController {
     fun updatePet(pet:Pet, id:String): Call<Pet> {
         return RetrofitConfig().petService().updatePet(pet, id)
     }
+    @JvmStatic
+    fun deletePet(id:String): Call<Unit> {
+        return RetrofitConfig().petService().deletePet(id)
+    }
 
 }

@@ -34,14 +34,6 @@ class RegisterActivity : AppCompatActivity() {
         emailInput = findViewById(R.id.email_input)
         passwordInput = findViewById(R.id.password_input)
 
-        if (LoginActivity.debugMode) {
-            nameInput.setText("Henrique")
-            surnameInput.setText("Malucao")
-            phoneInput.setText("12312312")
-            emailInput.setText("email@email")
-            passwordInput.setText("123")
-        }
-
         registerButton.setOnClickListener {
             if (nameInput.text!!.isEmpty() || passwordInput.text!!.isEmpty() || emailInput.text!!.isEmpty() || phoneInput.text!!.isEmpty() || surnameInput.text!!.isEmpty()) {
                 Toast.makeText(this, "Preencha todos os campos!", Toast.LENGTH_LONG).show()
@@ -58,6 +50,7 @@ class RegisterActivity : AppCompatActivity() {
             override fun onResponse(call: Call<User>?, response: Response<User>?) {
                 if (response != null && response!!.body() != null) {
                     Toast.makeText(applicationContext, "Usuário criado com sucesso!", Toast.LENGTH_LONG).show()
+                    finish()
 
                 } else {
                     Toast.makeText(applicationContext, "Deu ruim!", Toast.LENGTH_LONG).show()

@@ -10,6 +10,7 @@ import com.example.myapplication.api.controllers.PetController
 import com.example.myapplication.api.controllers.UserController
 import com.example.myapplication.model.Pet
 import com.example.myapplication.model.User
+import com.example.myapplication.singletons.UserInfo
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -43,12 +44,13 @@ class RegisterPetActivity : AppCompatActivity() {
 
     // TODO: Check requisition error 500
     private fun createPet() {
-        val pet = Pet(nameInput.text.toString(), ageInput.text.toString().toInt(), breedInput.text.toString(), descriptionInput.text.toString(), "", "", "")
+        val pet = Pet(nameInput.text.toString(), ageInput.text.toString().toInt(), breedInput.text.toString(), descriptionInput.text.toString(), "", UserInfo.userData!!.id, "")
         val call = PetController.createPet(pet)
         call.enqueue(object : Callback<Pet> {
             override fun onResponse(call: Call<Pet>?, response: Response<Pet>?) {
                 if (response != null && response!!.body() != null) {
                     Toast.makeText(applicationContext, "Pet criado com sucesso!", Toast.LENGTH_LONG).show()
+                    finish()
 
                 } else {
                     Toast.makeText(applicationContext, "Deu ruim!", Toast.LENGTH_LONG).show()

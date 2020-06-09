@@ -15,4 +15,7 @@ interface UserService {
 
     @GET("/user/getByEmail/{email}")
     fun getUserByEmail(@Path(value="email") email:String): Call<User>
+
+    @GET("/user/{id}")
+    fun getUserById(@Path(value="id") id:String): Call<User>
 }

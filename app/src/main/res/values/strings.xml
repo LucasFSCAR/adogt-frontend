@@ -9,4 +9,5 @@
     <string name="register">Registrar</string>
     <string name="voc_n_o_cadastrou_pet_s">Você não cadastrou Pet\'s</string>
     <string name="confirmar">Confirmar</string>
+    <string name="deletar">DELETAR</string>
 </resources>
